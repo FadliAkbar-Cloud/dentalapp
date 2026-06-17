@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental X-Ray Analyzer | Analisis Rontgen Gigi AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                🦷 Dental X-Ray Analyzer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for('index') }}">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('analysis') }}">Analisis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">
+                        Analisis Rontgen Gigi <br>
+                        <span class="text-primary">Dengan Teknologi AI</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Deteksi dini karies, gigi impaksi, dan kondisi gigi lainnya
+                        menggunakan kecerdasan buatan dengan akurasi tinggi.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="{{ url_for('analysis') }}" class="btn btn-primary btn-lg">
+                            Mulai Analisis →
+                        </a>
+                        <button class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#howItWorksModal">
+                            Cara Kerja
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="../static/images/eed9c599-dcbb-41df-8dab-5a372ed39119.jpeg" alt="Dental X-Ray"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Fitur Unggulan</h2>
+                <p class="section-subtitle">Teknologi AI untuk kesehatan gigi Anda</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Deteksi Akurat</h3>
+                        <p>Akurasi deteksi hingga 92% untuk berbagai kondisi gigi termasuk karies dan impaksi.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Hasil Cepat</h3>
+                        <p>Proses analisis hanya membutuhkan waktu kurang dari 5 detik.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Aman & Privasi</h3>
+                        <p>Data Anda diproses secara lokal dan tidak disimpan di server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Modal -->
+    <div class="modal fade" id="howItWorksModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bagaimana Cara Kerjanya?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li><strong>Upload Gambar Rontgen</strong> - Upload foto rontgen gigi Anda</li>
+                        <li><strong>Analisis AI</strong> - AI akan menganalisis gambar menggunakan YOLOv8</li>
+                        <li><strong>Lihat Hasil</strong> - Dapatkan hasil deteksi dengan bounding box dan confidence
+                            score</li>
+                        <li><strong>Konsultasi Dokter</strong> - Gunakan hasil sebagai referensi konsultasi dengan
+                            dokter gigi</li>
+                    </ol>
+                    <div class="alert alert-warning mt-3">
+                        ⚠️ <strong>Disclaimer:</strong> Hasil analisis AI bersifat skrining awal.
+                        Diagnosis final harus ditentukan oleh dokter gigi profesional.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

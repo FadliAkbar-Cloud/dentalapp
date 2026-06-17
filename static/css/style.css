@@ -1,0 +1,231 @@
+/* Custom CSS untuk Dental X-Ray Analyzer */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+.hero-buttons .btn-primary {
+    background-color: white;
+    border-color: white;
+    color: #667eea;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.hero-buttons .btn-outline-light:hover {
+    transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Analysis Cards */
+.analysis-card {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.analysis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.analysis-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Upload Area */
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #667eea;
+    background-color: #f0f0ff;
+}
+
+.upload-area.drag-over {
+    border-color: #667eea;
+    background-color: #e8eaff;
+}
+
+.upload-icon {
+    font-size: 3rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 1rem 1.5rem;
+}
+
+/* Alert */
+.alert {
+    border-radius: 12px;
+    border: none;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-primary:hover {
+    background-color: #5a67d8;
+    border-color: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: 12px 35px;
+    font-size: 1.1rem;
+}
+
+/* Table */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2d3748;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}

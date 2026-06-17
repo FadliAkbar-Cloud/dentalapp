@@ -1,0 +1,16 @@
+# === Python System Trash ===
+__pycache__/
+*.pyc
+
+# === Virtual Environment Lokal ===
+dental_env/
+
+# === Data Gambar Pasien (Privasi) ===
+*.jpg
+*.jpeg
+*.png
+uploads/
+
+# === File Model AI (Ikut Di-upload karena Kecil) ===
+# model/*.pt
+# model_data/*.pt

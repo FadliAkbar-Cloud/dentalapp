@@ -1,0 +1,22 @@
+# Virtual environment
+dental_env/
+venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# File sementara
+static/uploads/*.jpg
+static/uploads/*.png
+*.log
